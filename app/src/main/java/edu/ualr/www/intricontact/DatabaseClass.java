@@ -15,7 +15,7 @@ public class DatabaseClass extends SQLiteOpenHelper{
 
     private static final int DATABASE_VERSION = 1;
 
-    public static final String CONTACT_TABLE_NAME = "contacts";
+    public static final String CONTACT_TABLE_NAME = "contact";
     public static final String CONTACT_PRIMARY_KEY = "ID";
     public static final String CONTACT_FIRST_NAME = "firstName";
     public static final String CONTACT_LAST_NAME = "lastName";
