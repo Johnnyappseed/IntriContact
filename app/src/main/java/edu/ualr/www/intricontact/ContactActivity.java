@@ -10,13 +10,18 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class ContactActivity extends AppCompatActivity {
+    DatabaseHelper myDb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_contact);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        myDb = new DatabaseHelper(this);
     }
 
     @Override

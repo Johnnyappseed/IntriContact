@@ -11,7 +11,7 @@ import java.security.PublicKey;
  * Created by John on 10/11/2017 for the purpose of having a different file house the database.
  */
 
-public class DatabaseClass extends SQLiteOpenHelper{
+public class DatabaseHelper extends SQLiteOpenHelper{
 
     private static final int DATABASE_VERSION = 1;
 
@@ -32,8 +32,9 @@ public class DatabaseClass extends SQLiteOpenHelper{
             CONTACT_NUMBER + " TEXT, " +
             CONTACT_EMAIL + " TEXT);";
 
-    public DatabaseClass(Context context) {
+    public DatabaseHelper(Context context) {
         super(context, CONTACT_TABLE_NAME, null, DATABASE_VERSION);
+        SQLiteDatabase db = this.getReadableDatabase();
     }
 
     @Override
@@ -43,6 +44,7 @@ public class DatabaseClass extends SQLiteOpenHelper{
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+        db.execSQL("DROP TABLE IF EXIST " + CONTACT_TABLE_NAME);
+        onCreate(db);
     }
 }
