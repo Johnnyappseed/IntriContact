@@ -1,0 +1,19 @@
+<application>
+  <component name="FindSettings">
+    <option name="customScope" value="Project 'IntriContacts - Olivia'" />
+    <option name="defaultScopeName" value="Project 'IntriContacts - Olivia'" />
+    <option name="SEARCH_SCOPE" value="Project 'IntriContacts - Olivia'" />
+    <recentFileMasks>
+      <mask>*.properties</mask>
+      <mask>*.html</mask>
+      <mask>*.jsp</mask>
+      <mask>*.xml</mask>
+      <mask>*.java</mask>
+      <mask>*.js</mask>
+      <mask>*.as</mask>
+      <mask>*.css</mask>
+      <mask>*.mxml</mask>
+      <mask>*.iml</mask>
+    </recentFileMasks>
+  </component>
+</application>
